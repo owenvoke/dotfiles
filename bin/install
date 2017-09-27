@@ -6,7 +6,7 @@ DOTFILES=$HOME/.dotfiles
 # --------------------------------------------------------------------------------------------------
 
 echo "Installing ZSH and Git"
-sudo apt install zsh git php
+sudo apt install zsh git php node ack-grep
 
 # --------------------------------------------------------------------------------------------------
 # Enable OhMyZSH
