@@ -15,7 +15,11 @@ sudo apt install zsh git php nodejs ack-grep
 # Clone dotfiles repository
 # --------------------------------------------------------------------------------------------------
 
-git clone https://github.com/pxgamer/dotfiles.git $DOTFILES
+if [ -d $HOME/.dotfiles ]; then
+	git -C $DOTFILES pull
+else
+	git clone https://github.com/pxgamer/dotfiles.git $DOTFILES
+fi
 
 # --------------------------------------------------------------------------------------------------
 # Install additional binaries
