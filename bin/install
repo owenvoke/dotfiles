@@ -20,7 +20,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 # --------------------------------------------------------------------------------------------------
 
 echo "Changing to use ZSH"
-chsh -s /bin/zsh
+sudo chsh -s /bin/zsh
 exec zsh
 
 # --------------------------------------------------------------------------------------------------
@@ -74,3 +74,6 @@ sh $DOTFILES/development/composer.sh
 
 echo "Removing ZSH dumps"
 rm -f $HOME/.zcompdump*
+
+echo "Removing unrequired packages"
+sudo apt autoremove
