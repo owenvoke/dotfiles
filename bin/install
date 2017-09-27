@@ -28,6 +28,7 @@ fi
 source  $DOTFILES/install/link.sh
 source  $DOTFILES/install/composer.sh
 source  $DOTFILES/install/zplug.sh
+source  $DOTFILES/install/libsecret.sh
 
 # --------------------------------------------------------------------------------------------------
 # Cleanup

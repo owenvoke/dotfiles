@@ -4,10 +4,13 @@
     signingkey = E055D0EBE50D4BFD08D71E0DC6BC2669CFAF7A01
 
 [github]
-	user = pxgamer
+    user = pxgamer
 
 [commit]
     gpgSign = true
+
+[credential]
+    helper = libsecret
 
 [core]
     excludesFile = ~/.gitignore_global
@@ -15,3 +18,4 @@
 
 [url "git@github.com:"]
     insteadof = github:
+
