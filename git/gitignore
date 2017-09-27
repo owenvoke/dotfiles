@@ -1,3 +1,10 @@
+# PHP files #
 vendor/
-.idea/
 _ide_helper.php
+
+# Project files #
+.idea/
+
+# Logs and databases #
+*.log
+*.sqlite
