@@ -1,0 +1,17 @@
+[user]
+    name = pxgamer
+    email = owzie123@gmail.com
+    signingkey = E055D0EBE50D4BFD08D71E0DC6BC2669CFAF7A01
+
+[github]
+	user = pxgamer
+
+[commit]
+    gpgSign = true
+
+[core]
+    excludesFile = ~/.gitignore
+    autocrlf = input
+
+[url "git@github.com:"]
+    insteadof = github:
