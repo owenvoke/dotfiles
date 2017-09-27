@@ -1,0 +1,67 @@
+#!/usr/bin/env bash
+DOTFILES=$HOME/.dotfiles
+
+# --------------------------------------------------------------------------------------------------
+# Install required dependencies
+# --------------------------------------------------------------------------------------------------
+
+echo "Installing ZSH and Git"
+sudo apt install zsh git php
+
+# --------------------------------------------------------------------------------------------------
+# Enable OhMyZSH
+# --------------------------------------------------------------------------------------------------
+
+echo "Installing OhMyZSH"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+# --------------------------------------------------------------------------------------------------
+# Enable ZSH
+# --------------------------------------------------------------------------------------------------
+
+echo "Changing to use ZSH"
+chsh -s /bin/zsh
+exec zsh
+
+# --------------------------------------------------------------------------------------------------
+# Clone dotfiles repository
+# --------------------------------------------------------------------------------------------------
+
+echo "Cloning to $DOTFILES"
+git clone git@github.com:pxgamer/dotfiles.git $DOTFILES
+
+# --------------------------------------------------------------------------------------------------
+# Remove old files
+# --------------------------------------------------------------------------------------------------
+
+echo "Removing old files"
+rm -rf \
+  $HOME/.gitconfig \
+  $HOME/.gitignore \
+  $HOME/.zshrc \
+  $HOME/.zprofile \
+  $HOME/.gnupg/gpg.conf
+
+# --------------------------------------------------------------------------------------------------
+# Symlinks
+# --------------------------------------------------------------------------------------------------
+
+echo "Adding symlinks for new files"
+
+# Git Files
+ln -s $DOTFILES/git/gitconfig $HOME/.gitconfig
+ln -s $DOTFILES/git/gitignore $HOME/.gitignore
+
+# ZSH Files
+ln -s $DOTFILES/zsh/zshrc $HOME/.zshrc
+ln -s $DOTFILES/zsh/zprofile $HOME/.zprofile
+
+# GPG Files
+ln -s $DOTFILES/gnupg/gpg.conf $HOME/.gnupg/gpg.conf
+
+# --------------------------------------------------------------------------------------------------
+# Cleanup
+# --------------------------------------------------------------------------------------------------
+
+echo "Removing ZSH dumps"
+rm -f $HOME/.zcompdump*
