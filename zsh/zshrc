@@ -1,0 +1,14 @@
+source ~/.zplug/init.zsh
+
+# zplug
+zplug 'zplug/zplug', hook-build:'zplug --self-manage'
+
+# Theme
+zplug "themes/robbyrussell", from:oh-my-zsh
+
+# Plugins
+zplug "plugins/git", from:oh-my-zsh
+zplug "bobthecow/git-flow-completion"
+
+# Load Plugins
+zplug load
