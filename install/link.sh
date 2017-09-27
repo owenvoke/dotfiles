@@ -20,4 +20,5 @@ ln -s $DOTFILES/git/gitignore $HOME/.gitignore
 ln -s $DOTFILES/zsh/zprofile $HOME/.zprofile
 
 # GPG Files
+mkdir $HOME/.gnupg
 ln -s $DOTFILES/gnupg/gpg.conf $HOME/.gnupg/gpg.conf
