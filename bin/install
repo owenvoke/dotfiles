@@ -21,7 +21,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 echo "Changing to use ZSH"
 sudo chsh -s /bin/zsh
-exec zsh
 
 # --------------------------------------------------------------------------------------------------
 # Clone dotfiles repository
@@ -77,3 +76,9 @@ rm -f $HOME/.zcompdump*
 
 echo "Removing unrequired packages"
 sudo apt autoremove
+
+# --------------------------------------------------------------------------------------------------
+# Switch to ZSH
+# --------------------------------------------------------------------------------------------------
+
+exec zsh
