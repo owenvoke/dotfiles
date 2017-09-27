@@ -17,7 +17,7 @@ echo "Linking new dotfiles"
 
 # Git Files
 ln -s $DOTFILES/git/gitconfig $HOME/.gitconfig
-ln -s $DOTFILES/git/gitignore $HOME/.gitignore
+ln -s $DOTFILES/git/gitignore $HOME/.gitignore_global
 
 # ZSH Files
 ln -s $DOTFILES/zsh/zprofile $HOME/.zprofile

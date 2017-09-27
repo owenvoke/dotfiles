@@ -10,7 +10,7 @@
     gpgSign = true
 
 [core]
-    excludesFile = ~/.gitignore
+    excludesFile = ~/.gitignore_global
     autocrlf = input
 
 [url "git@github.com:"]
