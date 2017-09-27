@@ -5,7 +5,7 @@
 echo "Removing old dotfiles"
 rm -rf \
   $HOME/.gitconfig \
-  $HOME/.gitignore \
+  $HOME/.gitignore_global \
   $HOME/.zprofile \
   $HOME/.zshrc \
   $HOME/.gnupg/gpg.conf
