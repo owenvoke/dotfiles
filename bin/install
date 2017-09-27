@@ -33,4 +33,4 @@ sudo apt autoremove
 # --------------------------------------------------------------------------------------------------
 
 echo "Configuring zsh as default shell"
-chsh -s $(which zsh)
+sudo chsh -s $(which zsh)
