@@ -7,6 +7,7 @@ rm -rf \
   $HOME/.gitconfig \
   $HOME/.gitignore \
   $HOME/.zprofile \
+  $HOME/.zshrc \
   $HOME/.gnupg/gpg.conf
   
 # --------------------------------------------------------------------------------------------------
@@ -21,6 +22,7 @@ ln -s $DOTFILES/git/gitignore $HOME/.gitignore_global
 
 # ZSH Files
 ln -s $DOTFILES/zsh/zprofile $HOME/.zprofile
+ln -s $DOTFILES/zsh/zshrc $HOME/.zshrc
 
 # GPG Files
 if [ ! -d $HOME/.gnupg ]; then

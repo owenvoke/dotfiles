@@ -27,6 +27,7 @@ fi
 
 source  $DOTFILES/install/link.sh
 source  $DOTFILES/install/composer.sh
+source  $DOTFILES/install/zplug.sh
 
 # --------------------------------------------------------------------------------------------------
 # Cleanup
