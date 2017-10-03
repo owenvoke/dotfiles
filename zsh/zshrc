@@ -1,5 +1,12 @@
 source ~/.zplug/init.zsh
 
+# Aliases
+alias artisan="php artisan"
+
+# compinit
+autoload -Uz compinit
+compinit
+
 # zplug
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 
@@ -12,3 +19,4 @@ zplug "bobthecow/git-flow-completion"
 
 # Load Plugins
 zplug load
+
