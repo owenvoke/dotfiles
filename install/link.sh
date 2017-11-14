@@ -5,6 +5,7 @@
 echo "Removing old dotfiles"
 rm -rf \
   $HOME/.gitconfig \
+  $HOME/.gitconfig-work \
   $HOME/.gitignore_global \
   $HOME/.zprofile \
   $HOME/.zshrc \
@@ -18,6 +19,7 @@ echo "Linking new dotfiles"
 
 # Git Files
 ln -s $DOTFILES/git/gitconfig $HOME/.gitconfig
+ln -s $DOTFILES/git/gitconfig-work $HOME/.gitconfig-work
 ln -s $DOTFILES/git/gitignore $HOME/.gitignore_global
 
 # ZSH Files
