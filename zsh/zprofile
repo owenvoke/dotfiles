@@ -16,7 +16,6 @@ fi
 # Include phpenv bin directory
 if [ -d "$HOME/.phpenv/bin" ] ; then
     PATH="$HOME/.phpenv/bin:$PATH"
-	eval "$(phpenv init -)"
 fi
 
 # Include aliases
