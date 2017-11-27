@@ -1,10 +1,12 @@
 # Add PPAs
-sudo add-apt-repository ppa:ondrej/php
+sudo add-apt-repository ppa:ondrej/php -y
+sudo apt update
+sudo apt upgrade
 
 # Install Aptitude dependencies
-sudo apt install zsh
-sudo apt install php
-sudo apt install nodejs
-sudo apt install xsel
-sudo apt install gawk
-sudo apt install ack-grep
+sudo apt install zsh -y
+sudo apt install php -y
+sudo apt install nodejs -y
+sudo apt install xsel -y
+sudo apt install gawk -y
+sudo apt install ack-grep -y
