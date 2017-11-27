@@ -9,7 +9,8 @@ echo "--------------------------------------------------------------------------
 # Install required dependencies
 # --------------------------------------------------------------------------------------------------
 
-sudo apt install zsh git php nodejs ack-grep
+sudo apt update
+source $DOTFILES/install/apt.sh
 
 # --------------------------------------------------------------------------------------------------
 # Clone dotfiles repository
@@ -34,13 +35,5 @@ source  $DOTFILES/install/libsecret.sh
 # Cleanup
 # --------------------------------------------------------------------------------------------------
 
-rm -f $HOME/.zcompdump*
-
-sudo apt autoremove
-
-# --------------------------------------------------------------------------------------------------
-# Enable ZSH
-# --------------------------------------------------------------------------------------------------
-
-echo "Configuring zsh as default shell"
-sudo chsh -s $(which zsh)
+source $DOTFILES/install/cleanup.sh
+source $DOTFILES/install/set-shell.sh
