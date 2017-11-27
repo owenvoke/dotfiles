@@ -10,7 +10,7 @@ echo " ----------------------"
 # --------------------------------------------------------------------------------------------------
 
 sudo apt update
-source $DOTFILES/install/apt.sh
+sudo apt install git
 
 # --------------------------------------------------------------------------------------------------
 # Clone dotfiles repository
@@ -26,13 +26,14 @@ fi
 # Install additional binaries
 # --------------------------------------------------------------------------------------------------
 
-source  $DOTFILES/install/symlinks.sh
-source  $DOTFILES/install/composer.sh
-source  $DOTFILES/install/yarn.sh
-source  $DOTFILES/install/zplug.sh
-source  $DOTFILES/install/libsecret.sh
-source  $DOTFILES/install/ledger.sh
-source  $DOTFILES/install/phpenv.sh
+source $DOTFILES/install/apt.sh
+source $DOTFILES/install/symlinks.sh
+source $DOTFILES/install/composer.sh
+source $DOTFILES/install/yarn.sh
+source $DOTFILES/install/zplug.sh
+source $DOTFILES/install/libsecret.sh
+source $DOTFILES/install/ledger.sh
+source $DOTFILES/install/phpenv.sh
 
 # --------------------------------------------------------------------------------------------------
 # Cleanup
