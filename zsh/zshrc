@@ -13,6 +13,7 @@ zplug "themes/robbyrussell", from:oh-my-zsh
 # Plugins
 zplug "plugins/git", from:oh-my-zsh
 zplug "bobthecow/git-flow-completion"
+zplug "supercrabtree/k"
 
 # Load Plugins
 zplug load
