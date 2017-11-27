@@ -9,7 +9,7 @@ if [ -d "$HOME/.composer/vendor/bin" ] ; then
 fi
 
 # Include phpenv bin directory
-if [ -d "$HOME/.composer/vendor/bin" ] ; then
+if [ -d "$HOME/.phpenv/bin" ] ; then
     PATH="$HOME/.phpenv/bin:$PATH"
 	eval "$(phpenv init -)"
 fi
