@@ -19,6 +19,5 @@
 [url "git@github.com:"]
     insteadof = github:
 
-[includeIf "gitdir:/mnt/sdb1/pxgamer/work/"]
+[includeIf "gitdir:~/work/"]
     path = ~/.gitconfig-work
-
