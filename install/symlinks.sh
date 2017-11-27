@@ -31,3 +31,5 @@ if [ ! -d $HOME/.gnupg ]; then
     mkdir $HOME/.gnupg
 fi
 ln -s $DOTFILES/gnupg/gpg.conf $HOME/.gnupg/gpg.conf
+chmod 700 $HOME/.gnupg
+
