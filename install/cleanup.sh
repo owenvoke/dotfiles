@@ -4,4 +4,4 @@
 
 rm -f $HOME/.zcompdump*
 
-sudo apt autoremove
+sudo apt autoremove -y
