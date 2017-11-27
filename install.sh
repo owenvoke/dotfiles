@@ -32,6 +32,7 @@ source  $DOTFILES/install/yarn.sh
 source  $DOTFILES/install/zplug.sh
 source  $DOTFILES/install/libsecret.sh
 source  $DOTFILES/install/ledger.sh
+source  $DOTFILES/install/phpenv.sh
 
 # --------------------------------------------------------------------------------------------------
 # Cleanup
