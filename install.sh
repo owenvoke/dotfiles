@@ -17,9 +17,9 @@ sudo apt install git
 # --------------------------------------------------------------------------------------------------
 
 if [ -d $HOME/.dotfiles ]; then
-	git -C $DOTFILES pull
+    git -C $DOTFILES pull
 else
-	git clone https://github.com/pxgamer/dotfiles.git $DOTFILES
+    git clone https://github.com/pxgamer/dotfiles.git $DOTFILES
 fi
 
 # --------------------------------------------------------------------------------------------------
