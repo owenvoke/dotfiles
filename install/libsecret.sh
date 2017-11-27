@@ -1,5 +1,5 @@
 # Install
-sudo apt-get install libsecret-1-0 libsecret-1-dev
+sudo apt-get install libsecret-1-0 libsecret-1-dev -y
 
 # Make credential-manager
 sudo make -C /usr/share/doc/git/contrib/credential/libsecret
