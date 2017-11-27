@@ -26,7 +26,7 @@ fi
 # Install additional binaries
 # --------------------------------------------------------------------------------------------------
 
-source  $DOTFILES/install/link.sh
+source  $DOTFILES/install/symlinks.sh
 source  $DOTFILES/install/composer.sh
 source  $DOTFILES/install/yarn.sh
 source  $DOTFILES/install/zplug.sh

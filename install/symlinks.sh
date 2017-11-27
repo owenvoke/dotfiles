@@ -31,3 +31,7 @@ if [ ! -d $HOME/.gnupg ]; then
     mkdir $HOME/.gnupg
 fi
 ln -s $DOTFILES/gnupg/gpg.conf $HOME/.gnupg/gpg.conf
+
+# Binaries
+ln -s $DOTFILES/bin/create-package.sh /usr/local/bin/create-package
+sudo chmod +x /usr/local/bin/create-package
