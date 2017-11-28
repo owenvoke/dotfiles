@@ -4,6 +4,7 @@ sudo apt update
 sudo apt upgrade
 
 # Install Aptitude dependencies
+sudo apt install zip unzip -y
 sudo apt install zsh -y
 sudo apt install php -y
 sudo apt install nodejs -y
