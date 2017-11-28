@@ -15,8 +15,5 @@ zplug "plugins/git", from:oh-my-zsh
 zplug "bobthecow/git-flow-completion"
 zplug "supercrabtree/k"
 
-# Evals
-eval "$(phpenv init -)"
-
 # Load Plugins
 zplug load
