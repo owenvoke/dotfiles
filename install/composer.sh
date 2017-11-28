@@ -18,3 +18,7 @@ rm composer-setup.php
 
 # Move to /usr/bin
 sudo mv composer.phar /usr/bin/composer
+
+# Install Composer dependencies
+/usr/bin/composer global require squizlabs/php_codesniffer
+$HOME/.composer/vendor/bin/phpcs --config-set default_standard PSR2
