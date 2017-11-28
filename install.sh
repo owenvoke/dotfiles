@@ -34,6 +34,7 @@ source $DOTFILES/install/zplug.sh
 source $DOTFILES/install/libsecret.sh
 source $DOTFILES/install/ledger.sh
 source $DOTFILES/install/php.sh
+source $DOTFILES/install/node.sh
 
 # --------------------------------------------
 # Finalise
