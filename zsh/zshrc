@@ -15,5 +15,13 @@ zplug "plugins/git", from:oh-my-zsh
 zplug "bobthecow/git-flow-completion"
 zplug "supercrabtree/k"
 
+# Install any missing plugins
+if ! zplug check --verbose; then
+    printf "Install? [y/N]: "
+    if read -q; then
+        echo; zplug install
+    fi
+fi
+
 # Load Plugins
 zplug load
