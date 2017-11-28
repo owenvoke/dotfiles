@@ -1,14 +1,16 @@
 #!/usr/bin/env bash
 # Pipe current user's public key to clipboard
-if [[ -f "~/.ssh/id_ed25519.pub" ]]
+if [[ -f "$HOME/.ssh/id_ed25519.pub" ]]
 then
-	more ~/.ssh/id_ed25519.pub | xsel -b | echo '=> Public key copied to pasteboard.'
-	exit
-fi
-elif [[ -f "~/.ssh/id_rsa.pub" ]]
+    more $HOME/.ssh/id_ed25519.pub | xsel -b
+    echo '=> Public key copied to pasteboard.'
+    exit
+elif [[ -f "$HOME/.ssh/id_rsa.pub" ]]
 then
-	more ~/.ssh/id_rsa.pub | xsel -b | echo '=> Public key copied to pasteboard.'
-	exit
+    more $HOME/.ssh/id_rsa.pub | xsel -b
+    echo '=> Public key copied to pasteboard.'
+    exit
+else
+    echo '=> No public keys available.'
+    exit
 fi
-echo '=> No public keys available.'
-exit
