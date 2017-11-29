@@ -9,8 +9,12 @@ if [ -d "$HOME/.dotfiles/bin" ] ; then
 fi
 
 # Include Composer bin directory
-if [ -d "$HOME/.config/composer/vendor/bin" ] ; then
-    PATH="$HOME/.config/composer/vendor/bin:$PATH"
+if [ -d "$HOME/.composer/vendor/bin" ]
+then
+    PATH="$HOME/.composer/vendor/bin:$PATH"
+elif [ -d "$HOME/.config/composer/bin" ]
+then
+    PATH="$HOME/.config/composer/bin:$PATH"
 fi
 
 # Include aliases

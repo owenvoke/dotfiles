@@ -21,5 +21,10 @@ sudo mv composer.phar /usr/bin/composer
 
 # Install Composer dependencies
 /usr/bin/composer global require squizlabs/php_codesniffer
-$HOME/.config/composer/vendor/bin/phpcs --config-set default_standard PSR2
-
+if [ -d "$HOME/.composer/vendor/bin" ]
+then
+    $HOME/.composer/vendor/bin/phpcs --config-set default_standard PSR2
+elif [ -d "$HOME/.config/composer/bin" ]
+then
+    $HOME/.config/composer/vendor/bin/phpcs --config-set default_standard PSR2
+fi
