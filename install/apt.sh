@@ -9,5 +9,4 @@ sudo apt install zsh -y
 sudo apt install php -y
 sudo apt install xsel -y
 sudo apt install gawk -y
-sudo apt install ack-grep -y
 
