@@ -8,6 +8,7 @@ rm -rf \
   $HOME/.gitconfig-work \
   $HOME/.gitignore_global \
   $HOME/.zprofile \
+  $HOME/.bash_profile \
   $HOME/.zshrc \
   $HOME/.gnupg/gpg.conf
   
@@ -16,6 +17,9 @@ rm -rf \
 # --------------------------------------------------------------------------------------------------
 
 echo "Linking new dotfiles"
+
+# Bash Files
+ln -s $DOTFILES/bash/bash_profile $HOME/.bash_profile
 
 # Git Files
 ln -s $DOTFILES/git/gitconfig $HOME/.gitconfig
