@@ -26,15 +26,15 @@ fi
 # Install additional binaries
 # --------------------------------------------
 
-source $DOTFILES/install/apt.sh
-source $DOTFILES/install/symlinks.sh
-source $DOTFILES/install/zplug.sh
-source $DOTFILES/install/libsecret.sh
+source $DOTFILES/linux/apt.sh
+source $DOTFILES/linux/symlinks.sh
+source $DOTFILES/linux/zplug.sh
+source $DOTFILES/linux/libsecret.sh
 
 # --------------------------------------------
 # Cleanup
 # --------------------------------------------
 
-source $DOTFILES/install/cleanup.sh
-source $DOTFILES/install/set-shell.sh
+source $DOTFILES/linux/cleanup.sh
+source $DOTFILES/linux/set-shell.sh
 
