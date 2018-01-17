@@ -15,5 +15,10 @@ elif [ -d "$HOME/.config/composer/vendor/bin" ]; then
     PATH="$HOME/.config/composer/vendor/bin:$PATH"
 fi
 
+# Include Yarn bin directory
+if [ -d "$HOME/.yarn/bin" ]; then
+    PATH="$HOME/.yarn/bin:$PATH"
+fi
+
 # Include aliases
 source $HOME/.dotfiles/zsh/aliases.sh
