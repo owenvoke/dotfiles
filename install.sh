@@ -32,12 +32,6 @@ source $DOTFILES/install/zplug.sh
 source $DOTFILES/install/libsecret.sh
 
 # --------------------------------------------
-# Finalise
-# --------------------------------------------
-
-sudo chmod +x $DOTFILES/bin/*
-
-# --------------------------------------------
 # Cleanup
 # --------------------------------------------
 
