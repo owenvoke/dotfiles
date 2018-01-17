@@ -1,5 +1,4 @@
-# Add PPAs
-sudo add-apt-repository ppa:ondrej/php -y
+# Aptitude updates
 sudo apt update
 sudo apt upgrade
 
