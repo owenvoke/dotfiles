@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Aptitude updates
 sudo apt update
 sudo apt upgrade

@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+
 if [[ $1 = '' ]]; then
     echo 'Usage: create-package {directory_name}'
     exit

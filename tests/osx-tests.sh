@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 testBrewIsInstalled() {
 	assertEquals "/usr/local/bin/brew" "$(which brew)"

@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Brew updates
 brew doctor
 brew update

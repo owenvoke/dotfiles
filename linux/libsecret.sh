@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Install
 sudo apt-get install libsecret-1-0 libsecret-1-dev -y
 

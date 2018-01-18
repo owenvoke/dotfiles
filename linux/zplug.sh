@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 if [[ $(command -v zplug) ]]; then
     # Install
     curl -sL --proto-redir -all,https \
