@@ -10,6 +10,12 @@ A collection of my dotfiles for development.
 bash <(curl -s https://raw.githubusercontent.com/pxgamer/dotfiles/master/install-linux.sh)
 ```
 
+### On Mac
+
+```sh
+bash <(curl -s https://raw.githubusercontent.com/pxgamer/dotfiles/master/install-osx.sh)
+```
+
 ### Optional software
 
 - [NodeJS](https://nodejs.org)
