@@ -37,4 +37,3 @@ source $DOTFILES/linux/libsecret.sh
 
 source $DOTFILES/linux/cleanup.sh
 source $DOTFILES/linux/set-shell.sh
-
