@@ -17,3 +17,4 @@ bash <(curl -s https://raw.githubusercontent.com/pxgamer/dotfiles/master/install
 - [Ruby](https://www.ruby-lang.org)
 - [RubyGems](https://rubygems.org)
 - [Travis CLI](https://github.com/travis-ci/travis.rb)
+- [Phive](https://github.com/phar-io/phive)
