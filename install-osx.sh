@@ -28,6 +28,7 @@ fi
 
 source $DOTFILES/osx/brew.sh
 source $DOTFILES/linux/symlinks.sh
+source $DOTFILES/linux/zplug.sh
 
 # --------------------------------------------
 # Cleanup
