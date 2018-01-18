@@ -18,4 +18,4 @@ testSymlinksHaveBeenCreated() {
 	assertTrue "[ -f '${HOME}/.gnupg/gpg.conf' ]"
 }
 
-source ../shunit2-2.1.7/shunit2
+source ./shunit2-2.1.7/shunit2
