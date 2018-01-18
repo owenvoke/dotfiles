@@ -28,18 +28,18 @@ bash <(curl -s https://raw.githubusercontent.com/pxgamer/dotfiles/master/install
 ## Testing
 
 ```bash
-$ cd tests
-$ bash ./install.sh
+cd tests
+bash ./install.sh
 ```
 
 ### For Linux testing
 
 ```bash
-$ bash ./linux-tests.sh
+bash ./linux-tests.sh
 ```
 
 ### For OSX testing
 
 ```bash
-$ bash ./osx-tests.sh
+bash ./osx-tests.sh
 ```
