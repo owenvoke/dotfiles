@@ -9,6 +9,7 @@ rm -rf \
   $HOME/.gitconfig \
   $HOME/.gitconfig-work \
   $HOME/.gitignore_global \
+  $HOME/.git-commit-template \
   $HOME/.zprofile \
   $HOME/.bash_profile \
   $HOME/.zshrc \
@@ -27,6 +28,7 @@ ln -s $DOTFILES/bash/bash_profile $HOME/.bash_profile
 ln -s $DOTFILES/git/gitconfig $HOME/.gitconfig
 ln -s $DOTFILES/git/gitconfig-work $HOME/.gitconfig-work
 ln -s $DOTFILES/git/gitignore $HOME/.gitignore_global
+ln -s $DOTFILES/git/git-commit-template $HOME/.git-commit-template
 
 # ZSH Files
 ln -s $DOTFILES/zsh/zprofile $HOME/.zprofile
