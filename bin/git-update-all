@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+# Loop through directories
+for dir in *; do
+    echo ${dir}
+	# Pull the current branch from the origin
+    git -C ${dir} pull
+done
