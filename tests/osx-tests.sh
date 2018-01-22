@@ -16,6 +16,7 @@ testSymlinksHaveBeenCreated() {
 	assertTrue "[ -f '${HOME}/.gitconfig' ]"
 	assertTrue "[ -f '${HOME}/.gitconfig-work' ]"
 	assertTrue "[ -f '${HOME}/.gitignore_global' ]"
+	assertTrue "[ -f '${HOME}/.git-commit-template' ]"
 	assertTrue "[ -f '${HOME}/.zprofile' ]"
 	assertTrue "[ -f '${HOME}/.bash_profile' ]"
 	assertTrue "[ -f '${HOME}/.zshrc' ]"
