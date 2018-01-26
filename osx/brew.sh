@@ -13,7 +13,6 @@ brew install coreutils
 brew install gnupg
 brew install zsh
 brew install php72
-brew install zplug
 brew install gawk
 
 # Remove outdated versions
