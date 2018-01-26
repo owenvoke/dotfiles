@@ -9,9 +9,6 @@ del $Env:userprofile/.gitconfig
 del $Env:userprofile/.gitconfig-work
 del $Env:userprofile/.gitignore_global
 del $Env:userprofile/.git-commit-template
-del $Env:userprofile/.zprofile
-del $Env:userprofile/.bash_profile
-del $Env:userprofile/.zshrc
 del $Env:userprofile/.gnupg/gpg.conf
 
 # --------------------------------------------------------------------------------------------------
