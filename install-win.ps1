@@ -30,11 +30,11 @@ else
 # Install additional binaries
 # --------------------------------------------
 
-$Env:DOTFILES/windows/choco.ps1
-$Env:DOTFILES/windows/symlinks.ps1
+. $Env:DOTFILES/windows/choco.ps1
+. $Env:DOTFILES/windows/symlinks.ps1
 
 # --------------------------------------------
 # Cleanup
 # --------------------------------------------
 
-$Env:DOTFILES/windows/cleanup.ps1
+. $Env:DOTFILES/windows/cleanup.ps1
