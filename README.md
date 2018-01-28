@@ -30,6 +30,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.We
 - [RubyGems](https://rubygems.org)
 - [Travis CLI](https://github.com/travis-ci/travis.rb)
 - [Phive](https://github.com/phar-io/phive)
+- [Vagrant](https://vagrantup.com)
 
 ## Testing
 
