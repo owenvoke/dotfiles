@@ -26,6 +26,11 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.We
 
 - [NodeJS](https://nodejs.org)
 - [Yarn](https://yarnpkg.org)
+	- [Babel](https://yarn.pm/babel)
+	- [Lebab](https://yarn.pm/lebab)
+	- [Standard JS](https://yarn.pm/standard)
+	- [tldr](https://yarn.pm/tldr)
+	- [tldr-lint](https://yarn.pm/tldr-lint)
 - [Ruby](https://www.ruby-lang.org)
 - [RubyGems](https://rubygems.org)
 - [Travis CLI](https://github.com/travis-ci/travis.rb)
