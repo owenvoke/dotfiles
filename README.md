@@ -24,6 +24,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.We
 
 ### Optional software
 
+- [Git Extras](https://github.com/tj/git-extras)
 - [NodeJS](https://nodejs.org)
 - [Yarn](https://yarnpkg.org)
 	- [Babel](https://yarn.pm/babel)
