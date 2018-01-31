@@ -36,6 +36,9 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.We
 	- [RubyGems](https://rubygems.org)
 	- [Travis CLI](https://github.com/travis-ci/travis.rb)
 - [Phive](https://github.com/phar-io/phive)
+    - [PHPUnit](https://github.com/sebastianbergmann/phpunit) (phpunit)
+    - [PHP_CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer) (phpcs, phpcbf)
+    - [Box](https://github.com/box-project/box2) (box-project/box2)
 - [Vagrant](https://vagrantup.com)
 
 ## Testing
