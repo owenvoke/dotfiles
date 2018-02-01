@@ -24,3 +24,6 @@ fi
 
 # Load Plugins
 zplug load
+
+# Load Aliases
+source $HOME/.dotfiles/zsh/aliases.sh

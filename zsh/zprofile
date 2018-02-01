@@ -20,5 +20,3 @@ if [ -d "$HOME/.yarn/bin" ]; then
     PATH="$HOME/.yarn/bin:$PATH"
 fi
 
-# Include aliases
-source $HOME/.dotfiles/zsh/aliases.sh
