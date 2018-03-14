@@ -6,7 +6,7 @@ if [[ "$1" = '' ]]; then
 fi
 
 main() {
-    git clone git@github.com:pxgamer/skeleton "$1" && \
+    git clone https://github.com/pxgamer/skeleton "$1" && \
     cd "$1" && \
     php prefill.php && \
     rm prefill.php && \
