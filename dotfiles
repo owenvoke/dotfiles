@@ -1,0 +1,86 @@
+#!/usr/bin/env bash
+
+main() {
+  if [ ! -n "$DOTFILES" ]; then
+    DOTFILES=~/.dotfiles
+  fi
+
+  # Prevent the cloned repository from having insecure permissions.
+  umask g-w,o-w
+
+  # Check if Git is installed
+  hash git >/dev/null 2>&1 || {
+    echo "Error: Git is not installed."
+    exit 1
+  }
+
+  GIT_VERSION=$(git --version | cut -d ' ' -f 3)
+
+  if [ ! -d "$DOTFILES" ]; then
+    echo "Cloning dotfiles."
+    git clone https://github.com/pxgamer/dotfiles $DOTFILES
+    FIRST_TIME_INSTALL=true
+  fi
+
+  cd $DOTFILES
+  prev_head="$(git rev-parse HEAD)"
+  source src/utils.sh
+
+  if [[ "$FIRST_TIME_INSTALL" != true ]]; then
+    e_header "Dotfiles already exists, updating it."
+    if version_gt $GIT_VERSION "2.9.0"; then
+      git pull --rebase --stat --autostash origin master
+    else
+      git stash
+      git pull --rebase --stat origin master
+      git stash pop
+    fi
+    if [[ "$(git rev-parse HEAD)" != "$prev_head" ]]; then
+      CHANGE_DETECTED=true
+    fi
+    e_success "Done."
+  fi
+
+  e_header "Initializing / updating submodule(s)."
+  git submodule update --init
+  e_success "Done."
+
+
+  e_question "Do you wish to install lib and apps?"
+  select yn in "Yes" "No"; do
+    case $yn in
+      Yes )
+        e_header "Install necessary lib and apps."
+        if is_osx; then
+          e_info "System is OSX."
+          source src/install-osx.sh
+        elif is_ubuntu; then
+          e_info "System is Ubuntu."
+          source src/install-linux.sh
+        fi
+        e_success "Done."
+        break;;
+      No )
+        e_info "Skip lib and app install."
+        break;;
+    esac
+  done
+
+  source src/common/symlinks.sh
+
+  printf "\n"
+
+  if [[ "$FIRST_TIME_INSTALL" = true ]]; then
+    e_success "Dotfiles have been installed."
+    e_info "Last step: Please exit and restart all your shells."
+  else
+    e_success "Hooray! Dotfiles have been updated and/or is at the current version."
+    if [[ "$CHANGE_DETECTED" = true ]]; then
+      e_info "Changes detected, please reload shell."
+    fi
+  fi
+
+  printf "\n"
+}
+
+main
