@@ -4,7 +4,7 @@ A collection of my dotfiles for development.
 
 ## Installation
 
-```sh
+```bash
 bash <(curl -s https://raw.githubusercontent.com/pxgamer/dotfiles/master/install)
 ```
 
@@ -26,22 +26,3 @@ bash <(curl -s https://raw.githubusercontent.com/pxgamer/dotfiles/master/install
     - [PHP_CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer) (phpcs, phpcbf)
     - [Box](https://github.com/box-project/box2) (box-project/box2)
 - [Vagrant](https://vagrantup.com)
-
-## Testing
-
-```bash
-cd tests
-bash ./install.sh
-```
-
-### For Linux testing
-
-```bash
-bash ./linux-tests.sh
-```
-
-### For OSX testing
-
-```bash
-bash ./osx-tests.sh
-```
