@@ -74,7 +74,7 @@ main() {
     e_success "Dotfiles have been installed."
     e_info "Last step: Please exit and restart all your shells."
   else
-    e_success "Hooray! Dotfiles have been updated and/or is at the current version."
+    e_success "Hooray! Dotfiles have been updated and are at the latest version."
     if [[ "$CHANGE_DETECTED" = true ]]; then
       e_info "Changes detected, please reload shell."
     fi
