@@ -2,13 +2,13 @@
 
 A collection of my dotfiles for development.
 
-## Installation
+## Install
 
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/pxgamer/dotfiles/master/dotfiles)
 ```
 
-### Optional software
+## Other software
 
 - [Git Extras](https://github.com/tj/git-extras)
 - [NodeJS](https://nodejs.org)
