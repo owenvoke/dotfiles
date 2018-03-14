@@ -4,21 +4,21 @@
 # Remove old files
 # --------------------------------------------------------------------------------------------------
 
-echo "Removing old dotfiles"
-rm -rf \
-    $HOME/.gitconfig \
-    $HOME/.gitconfig-work \
-    $HOME/.gitignore_global \
-    $HOME/.git-commit-template \
-    $HOME/.zprofile \
-    $HOME/.bash_profile \
-    $HOME/.zshrc \
-    $HOME/.gnupg/gpg.conf
+e_section "Removing old dotfiles"
+
+rm -rf $HOME/.gitconfig
+rm -rf $HOME/.gitconfig-work
+rm -rf $HOME/.gitignore_global
+rm -rf $HOME/.git-commit-template
+rm -rf $HOME/.zprofile
+rm -rf $HOME/.bash_profile
+rm -rf rm -rf $HOME/.zshrc
+rm -rf $HOME/.gnupg/gpg.conf
 
 # --------------------------------------------------------------------------------------------------
 # Symlinks
 # --------------------------------------------------------------------------------------------------
-echo "Linking new dotfiles"
+e_section "Linking new dotfiles"
 
 # Bash Files
 ln -s $DOTFILES/bash/bash_profile $HOME/.bash_profile
