@@ -5,7 +5,13 @@ if [[ "$1" = '' ]]; then
     exit
 fi
 
-git clone git@github.com:pxgamer/skeleton "$1" && \
-cd "$1" && \
-php prefill.php && \
-rm prefill.php
+main() {
+    git clone git@github.com:pxgamer/skeleton "$1" && \
+    cd "$1" && \
+    php prefill.php && \
+    rm prefill.php && \
+    rm -rf .git
+}
+
+main "$1"
+
