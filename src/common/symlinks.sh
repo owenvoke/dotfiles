@@ -6,19 +6,18 @@
 
 echo "Removing old dotfiles"
 rm -rf \
-  $HOME/.gitconfig \
-  $HOME/.gitconfig-work \
-  $HOME/.gitignore_global \
-  $HOME/.git-commit-template \
-  $HOME/.zprofile \
-  $HOME/.bash_profile \
-  $HOME/.zshrc \
-  $HOME/.gnupg/gpg.conf
+    $HOME/.gitconfig \
+    $HOME/.gitconfig-work \
+    $HOME/.gitignore_global \
+    $HOME/.git-commit-template \
+    $HOME/.zprofile \
+    $HOME/.bash_profile \
+    $HOME/.zshrc \
+    $HOME/.gnupg/gpg.conf
 
 # --------------------------------------------------------------------------------------------------
 # Symlinks
 # --------------------------------------------------------------------------------------------------
-
 echo "Linking new dotfiles"
 
 # Bash Files
@@ -38,5 +37,6 @@ ln -s $DOTFILES/zsh/zshrc $HOME/.zshrc
 if [ ! -d $HOME/.gnupg ]; then
     mkdir $HOME/.gnupg
 fi
+
 ln -s $DOTFILES/gnupg/gpg.conf $HOME/.gnupg/gpg.conf
 chmod 700 $HOME/.gnupg
