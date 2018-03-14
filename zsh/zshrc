@@ -1,4 +1,4 @@
-source ~/.zplug/init.zsh
+source $HOME/.zplug/init.zsh
 
 # compinit
 autoload -Uz compinit
