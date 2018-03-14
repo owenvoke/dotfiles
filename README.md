@@ -16,12 +16,6 @@ bash <(curl -s https://raw.githubusercontent.com/pxgamer/dotfiles/master/install
 bash <(curl -s https://raw.githubusercontent.com/pxgamer/dotfiles/master/install-osx.sh)
 ```
 
-### On Windows
-
-```powershell
-Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/pxgamer/dotfiles/master/install-win.ps1'))
-```
-
 ### Optional software
 
 - [Git Extras](https://github.com/tj/git-extras)
