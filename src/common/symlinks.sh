@@ -4,7 +4,7 @@
 # Remove old files
 # --------------------------------------------------------------------------------------------------
 
-e_section "Removing old dotfiles"
+e_info "Removing old dotfiles"
 
 rm -rf $HOME/.gitconfig
 rm -rf $HOME/.gitconfig-work
@@ -18,7 +18,7 @@ rm -rf $HOME/.gnupg/gpg.conf
 # --------------------------------------------------------------------------------------------------
 # Symlinks
 # --------------------------------------------------------------------------------------------------
-e_section "Linking new dotfiles"
+e_info "Linking new dotfiles"
 
 # Bash Files
 ln -s $DOTFILES/bash/bash_profile $HOME/.bash_profile

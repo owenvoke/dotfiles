@@ -4,5 +4,7 @@
 # Enable ZSH
 # --------------------------------------------------------------------------------------------------
 
-echo "Configuring zsh as default shell"
+echo
+e_info "Configuring zsh as default shell"
+
 sudo chsh -s $(which zsh)
