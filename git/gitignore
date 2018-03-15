@@ -1,14 +1,14 @@
-# PHP files #
+# PHP files
 /vendor/
 _ide_helper.php
 
-# JS files #
+# JS files
 node_modules/
 
-# Project files #
+# Project files
 .idea/
 .vagrant/
 
-# Logs and databases #
+# Logs and databases
 *.log
 *.sqlite
