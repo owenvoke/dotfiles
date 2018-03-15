@@ -1,5 +1,5 @@
 # PHP files #
-vendor/
+/vendor/
 _ide_helper.php
 
 # JS files #
