@@ -31,6 +31,7 @@ ln -s $DOTFILES/git/gitignore $HOME/.gitignore_global
 ln -s $DOTFILES/git/git-commit-template $HOME/.git-commit-template
 
 # ZSH Files
+ln -s $DOTFILES/zsh/zprofile $HOME/.zprofile
 ln -s $DOTFILES/zsh/zshrc $HOME/.zshrc
 
 # GPG Files
