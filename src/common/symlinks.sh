@@ -11,6 +11,7 @@ rm -rf $HOME/.gitconfig-work
 rm -rf $HOME/.gitignore_global
 rm -rf $HOME/.git-commit-template
 rm -rf $HOME/.profile
+rm -rf $HOME/.zprofile
 rm -rf $HOME/.bash_profile
 rm -rf rm -rf $HOME/.zshrc
 rm -rf $HOME/.gnupg/gpg.conf
