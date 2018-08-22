@@ -2,7 +2,9 @@
 
 # Loop through directories
 for dir in *; do
-    echo ${dir}
-    # Run the garbage collector to optimize the repository
-    git -C ${dir} gc --auto
+    if [[ -d "${dir}/.git" ]]; then
+        echo ${dir}
+        # Run the garbage collector to optimize the repository
+        git -C ${dir} gc --auto
+    fi
 done
