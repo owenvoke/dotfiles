@@ -22,3 +22,6 @@
 
 [includeIf "gitdir:~/work/"]
     path = ~/.gitconfig-work
+
+[gitflow "prefix"]
+    versiontag = v
