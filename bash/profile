@@ -19,3 +19,9 @@ fi
 if [ -d "$HOME/.yarn/bin" ]; then
     PATH="$HOME/.yarn/bin:$PATH"
 fi
+
+# Ledger BOLOS development
+if [ -d "$HOME/.bolos-dev" ]; then
+    export BOLOS_ENV="$HOME/.bolos-dev"
+    export BOLOS_SDK="$BOLOS_ENV/nanos-secure-sdk"
+fi
