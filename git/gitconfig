@@ -16,6 +16,7 @@
 [core]
     excludesFile = ~/.gitignore_global
     autocrlf = input
+    editor = nano
 
 [url "git@github.com:"]
     insteadof = github:
