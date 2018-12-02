@@ -12,7 +12,7 @@ A collection of my dotfiles for development.
 bash <(curl -s https://raw.githubusercontent.com/pxgamer/dotfiles/master/dotfiles)
 ```
 
-## Other software
+## Software
 
 #### General
 
