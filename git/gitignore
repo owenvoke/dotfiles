@@ -12,3 +12,6 @@ node_modules/
 # Logs and databases
 *.log
 *.sqlite
+
+# OS files
+.DS_Store
