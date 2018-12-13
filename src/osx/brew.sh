@@ -10,9 +10,6 @@ fi
 brew doctor
 brew update
 
-# Brew taps
-brew tap homebrew/homebrew-php
-
 # Install Brew dependencies
 brew install git
 brew install coreutils
