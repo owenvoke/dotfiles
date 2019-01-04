@@ -8,7 +8,7 @@ e_info "Removing old dotfiles"
 
 rm -rf $HOME/.gitconfig
 rm -rf $HOME/.gitconfig-work
-rm -rf $HOME/.gitignore_global
+rm -rf $HOME/.gitignore-global
 rm -rf $HOME/.git-commit-template
 rm -rf $HOME/.profile
 rm -rf $HOME/.zprofile
@@ -28,7 +28,7 @@ ln -s $DOTFILES/bash/profile $HOME/.profile
 # Git Files
 ln -s $DOTFILES/git/gitconfig $HOME/.gitconfig
 ln -s $DOTFILES/git/gitconfig-work $HOME/.gitconfig-work
-ln -s $DOTFILES/git/gitignore $HOME/.gitignore_global
+ln -s $DOTFILES/git/gitignore $HOME/.gitignore-global
 ln -s $DOTFILES/git/git-commit-template $HOME/.git-commit-template
 
 # ZSH Files

@@ -14,7 +14,7 @@
     helper = libsecret
 
 [core]
-    excludesFile = ~/.gitignore_global
+    excludesFile = ~/.gitignore-global
     autocrlf = input
     editor = nano
 
