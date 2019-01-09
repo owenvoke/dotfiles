@@ -12,6 +12,7 @@ zplug "dracula/zsh", as:theme
 
 # Plugins
 zplug "plugins/git", from:oh-my-zsh
+zplug "plugins/nvm", from:oh-my-zsh
 zplug "bobthecow/git-flow-completion"
 zplug "sptndc/phpenv.plugin.zsh"
 
