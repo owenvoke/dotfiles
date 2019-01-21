@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if [[ -z "$1" ]]; then
-    echo 'Usage: create-package {directory_name}'
+    echo 'Usage: create-package [directory_name]'
     exit
 fi
 
@@ -14,4 +14,3 @@ main() {
 }
 
 main "$1"
-
