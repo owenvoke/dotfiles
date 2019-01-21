@@ -32,8 +32,8 @@ ln -s $DOTFILES/git/ignore $HOME/.gitignore-global
 ln -s $DOTFILES/git/commit-template $HOME/.git-commit-template
 
 # ZSH Files
-ln -s $DOTFILES/zsh/zprofile $HOME/.zprofile
-ln -s $DOTFILES/zsh/zshrc $HOME/.zshrc
+ln -s $DOTFILES/zsh/profile $HOME/.zprofile
+ln -s $DOTFILES/zsh/rc $HOME/.zshrc
 
 # GPG Files
 if [ ! -d $HOME/.gnupg ]; then
