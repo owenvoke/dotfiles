@@ -10,6 +10,9 @@
     gpgSign = true
     template = ~/.git-commit-template
 
+[tag]
+    forceSignAnnotated = true
+
 [core]
     excludesFile = ~/.gitignore-global
     autocrlf = input
