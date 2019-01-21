@@ -4,12 +4,9 @@
 if [[ -f "$HOME/.ssh/id_ed25519.pub" ]]; then
     more $HOME/.ssh/id_ed25519.pub | xsel -b
     echo '=> Public key copied to pasteboard.'
-    exit
 elif [[ -f "$HOME/.ssh/id_rsa.pub" ]]; then
     more $HOME/.ssh/id_rsa.pub | xsel -b
     echo '=> Public key copied to pasteboard.'
-    exit
 else
     echo '=> No public keys available.'
-    exit
 fi
