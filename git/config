@@ -26,3 +26,7 @@
 
 [gitflow "prefix"]
     versiontag = v
+
+[alias]
+    s = status
+    staged = "diff --staged"
