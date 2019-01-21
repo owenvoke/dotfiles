@@ -10,9 +10,6 @@
     gpgSign = true
     template = ~/.git-commit-template
 
-[credential]
-    helper = libsecret
-
 [core]
     excludesFile = ~/.gitignore-global
     autocrlf = input

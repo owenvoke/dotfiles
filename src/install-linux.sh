@@ -8,7 +8,6 @@ is_ubuntu || return 1
 
 . $DOTFILES/src/linux/apt.sh
 . $DOTFILES/src/common/zplug.sh
-. $DOTFILES/src/linux/libsecret.sh
 
 # --------------------------------------------
 # Cleanup
