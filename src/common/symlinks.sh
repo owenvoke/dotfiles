@@ -26,10 +26,10 @@ ln -s $DOTFILES/bash/bash_profile $HOME/.bash_profile
 ln -s $DOTFILES/bash/profile $HOME/.profile
 
 # Git Files
-ln -s $DOTFILES/git/gitconfig $HOME/.gitconfig
-ln -s $DOTFILES/git/gitconfig-work $HOME/.gitconfig-work
-ln -s $DOTFILES/git/gitignore $HOME/.gitignore-global
-ln -s $DOTFILES/git/git-commit-template $HOME/.git-commit-template
+ln -s $DOTFILES/git/config $HOME/.gitconfig
+ln -s $DOTFILES/git/config-work $HOME/.gitconfig-work
+ln -s $DOTFILES/git/ignore $HOME/.gitignore-global
+ln -s $DOTFILES/git/commit-template $HOME/.git-commit-template
 
 # ZSH Files
 ln -s $DOTFILES/zsh/zprofile $HOME/.zprofile
