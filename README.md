@@ -23,11 +23,11 @@ bash <(curl -s https://raw.githubusercontent.com/pxgamer/dotfiles/master/dotfile
 #### JS
 
 - [NodeJS](https://nodejs.org)
-  - [Babel](https://yarn.pm/babel)
-  - [Lebab](https://yarn.pm/lebab)
-  - [Standard JS](https://yarn.pm/standard)
-  - [tldr](https://yarn.pm/tldr)
-  - [tldr-lint](https://yarn.pm/tldr-lint)
+  - [Babel](https://npmjs.com/package/babel)
+  - [Lebab](https://npmjs.com/package/lebab)
+  - [Standard JS](https://npmjs.com/package/standard)
+  - [tldr](https://npmjs.com/package/tldr)
+  - [tldr-lint](https://npmjs.com/package/tldr-lint)
 
 #### PHP
 
