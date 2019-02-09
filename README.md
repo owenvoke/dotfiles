@@ -18,7 +18,6 @@ bash <(curl -s https://raw.githubusercontent.com/pxgamer/dotfiles/master/dotfile
 
 - [Git Extras](https://github.com/tj/git-extras)
 - [Travis CLI](https://github.com/travis-ci/travis.rb)
-- [Vagrant](https://vagrantup.com)
 
 #### JS
 
