@@ -28,5 +28,6 @@
     versiontag = v
 
 [alias]
+    fi = "flow init --defaults"
     s = status
     staged = "diff --staged"
