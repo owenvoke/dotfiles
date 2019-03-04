@@ -1,6 +1,7 @@
 # PHP files
 /vendor/
 _ide_helper.php
+.phpunit.result.cache
 
 # JS files
 node_modules/
