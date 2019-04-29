@@ -27,6 +27,9 @@
 [gitflow "prefix"]
     versiontag = v
 
+[rebase]
+    abbreviateCommands = true
+
 [alias]
     fi = "flow init --defaults"
     s = status
