@@ -31,8 +31,8 @@ bash <(curl -s https://raw.githubusercontent.com/pxgamer/dotfiles/master/dotfile
 #### PHP
 
 - [Phive](https://github.com/phar-io/phive)
-    - [PHPUnit](https://github.com/sebastianbergmann/phpunit) (phpunit)
-    - [Box](https://github.com/box-project/box2) (box-project/box2)
+    - [PHPUnit](https://github.com/sebastianbergmann/phpunit)
+    - [Box](https://github.com/humbug/box)
 
 [ico-code-style]: https://img.shields.io/badge/code%20style-psr2-green.svg?style=flat-square
 [ico-ide]: https://img.shields.io/badge/ide-phpstorm-775af8.svg?style=flat-square
