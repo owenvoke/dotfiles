@@ -32,7 +32,6 @@ bash <(curl -s https://raw.githubusercontent.com/pxgamer/dotfiles/master/dotfile
 
 - [Phive](https://github.com/phar-io/phive)
     - [PHPUnit](https://github.com/sebastianbergmann/phpunit) (phpunit)
-    - [PHP_CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer) (phpcs, phpcbf)
     - [Box](https://github.com/box-project/box2) (box-project/box2)
 
 [ico-code-style]: https://img.shields.io/badge/code%20style-psr2-green.svg?style=flat-square
