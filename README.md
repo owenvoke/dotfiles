@@ -39,5 +39,5 @@ bash <(curl -s https://raw.githubusercontent.com/pxgamer/dotfiles/master/dotfile
 [ico-shell]: https://img.shields.io/badge/shell-zsh-blue.svg?style=flat-square
 
 [link-code-style]: https://www.php-fig.org/psr/psr-2
-[link-ide]: https://www.jetbrains.com/phpstorm
+[link-ide]: https://jetbrains.com/phpstorm
 [link-shell]: http://zsh.sourceforge.net
