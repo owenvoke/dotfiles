@@ -18,6 +18,9 @@
     autocrlf = input
     editor = nano
 
+[rebase]
+    autoStash = true
+
 [url "git@github.com:"]
     insteadof = github:
 
