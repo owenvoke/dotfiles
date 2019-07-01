@@ -1,6 +1,6 @@
-brew git
-brew coreutils
-brew gnupg
-brew zsh
-brew php73
-brew gawk
+brew 'git'
+brew 'coreutils'
+brew 'gnupg'
+brew 'zsh'
+brew 'php'
+brew 'gawk'
