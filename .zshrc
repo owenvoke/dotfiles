@@ -1,6 +1,6 @@
-test -r ~/.shell-aliases && source ~/.shell-aliases
+test -r $HOME/.shell-aliases && source $HOME/.shell-aliases
 
-if [ -f $ZPLUG_HOME/init.zsh ]; then
+if [ -f $HOME/.zplug/init.zsh ]; then
   source $HOME/.zplug/init.zsh
 
   # compinit

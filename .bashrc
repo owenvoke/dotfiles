@@ -4,6 +4,6 @@
 # Source global definitions
 test -r /etc/bashrc && . /etc/bashrc
 
-test -r ~/.shell-aliases && . ~/.shell-aliases
+test -r $HOME/.shell-aliases && . $HOME/.shell-aliases
 
-test -r ~/.bashrc.local && . ~/.bashrc.local
+test -r $HOME/.bashrc.local && . $HOME/.bashrc.local
