@@ -31,4 +31,4 @@ if [ "$system_type" = "Linux" ]; then
 fi
 
 # Set default shell to Zsh
-chsh -s $(which zsh)
+chsh -s "$(command -v zsh)"
