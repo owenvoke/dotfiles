@@ -15,6 +15,7 @@ rm -rf $HOME/.zprofile
 rm -rf $HOME/.bash_profile
 rm -rf rm -rf $HOME/.zshrc
 rm -rf $HOME/.gnupg/gpg.conf
+rm -rf $HOME/.gnupg/dirmngr.conf
 
 # --------------------------------------------------------------------------------------------------
 # Symlinks
@@ -41,4 +42,5 @@ if [ ! -d $HOME/.gnupg ]; then
 fi
 
 ln -s $DOTFILES/gnupg/gpg.conf $HOME/.gnupg/gpg.conf
+ln -s $DOTFILES/gnupg/dirmngr.conf $HOME/.gnupg/dirmngr.conf
 chmod 700 $HOME/.gnupg
