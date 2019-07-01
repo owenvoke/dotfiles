@@ -1,9 +1,0 @@
-# Include local/bin directory
-if [ -d "/usr/local/bin" ]; then
-    PATH="/usr/local/bin:$PATH"
-fi
-
-# Include custom dotfiles bin directory
-if [ -d "$HOME/.dotfiles/bin" ]; then
-    PATH="$HOME/.dotfiles/bin:$PATH"
-fi

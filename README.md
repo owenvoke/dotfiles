@@ -10,7 +10,11 @@ A collection of my dotfiles for development.
 ## Install
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/pxgamer/dotfiles/master/dotfiles)
+# Install yadm
+curl -fLo /usr/local/bin/yadm https://github.com/TheLocehiliosan/yadm/raw/master/yadm && chmod a+x /usr/local/bin/yadm
+
+# Install dotfiles
+yadm clone https://github.com/pxgamer/dotfiles
 ```
 
 [ico-code-style]: https://img.shields.io/badge/code%20style-psr2-green.svg?style=flat-square
