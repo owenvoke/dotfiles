@@ -1,1 +1,10 @@
+# Shortcuts
+alias c="clear"
+alias get-ip="echo $(curl -s https://canihazip.com/s)"
+
+# Laravel
+alias a="php artisan"
 alias artisan="php artisan"
+
+# PHP
+alias cfresh="rm -rf vendor/ composer.lock && composer i"
