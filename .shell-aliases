@@ -9,3 +9,9 @@ alias artisan="php artisan"
 
 # PHP
 alias cfresh="rm -rf vendor/ composer.lock && composer i"
+
+# Functions
+function proj() {
+  cd "$HOME/projects/$1" || return
+  printf "\033c"
+}
