@@ -1,5 +1,6 @@
 # Shortcuts
 alias c="clear"
+alias cls="clear"
 alias get-ip="echo $(curl -s https://canihazip.com/s)"
 
 # Laravel
