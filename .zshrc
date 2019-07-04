@@ -11,7 +11,10 @@ if [ -f $HOME/.zplug/init.zsh ]; then
   zplug "zplug/zplug", hook-build:'zplug --self-manage'
 
   # Theme
-  zplug "dracula/zsh", as:theme
+  zplug "denysdovhan/spaceship-prompt", \
+    use:spaceship.zsh, \
+    from:github, \
+    as:theme
 
   # Plugins
   zplug "plugins/git", from:oh-my-zsh
