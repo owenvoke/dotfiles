@@ -20,8 +20,8 @@ if [ -f $HOME/.zplug/init.zsh ]; then
   zplug "plugins/dotenv", from:oh-my-zsh
   zplug "plugins/encode64", from:oh-my-zsh
   zplug "plugins/git", from:oh-my-zsh
+  zplug "plugins/git-flow", from:oh-my-zsh
   zplug "plugins/nvm", from:oh-my-zsh
-  zplug "bobthecow/git-flow-completion"
   zplug "sptndc/phpenv.plugin.zsh"
 
   # Install plugins if there are plugins that have not been installed
