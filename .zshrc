@@ -16,12 +16,17 @@ if [ -f $HOME/.zplug/init.zsh ]; then
     from:github, \
     as:theme
 
-  # Plugins
+  # Plugins from oh my zsh
   zplug "plugins/dotenv", from:oh-my-zsh
   zplug "plugins/encode64", from:oh-my-zsh
   zplug "plugins/git", from:oh-my-zsh
   zplug "plugins/git-flow", from:oh-my-zsh
   zplug "plugins/nvm", from:oh-my-zsh
+
+  # Plugins from zsh users
+  zplug "zsh-users/zsh-autosuggestions"
+
+  # Additional plugins
   zplug "sptndc/phpenv.plugin.zsh"
 
   # Install plugins if there are plugins that have not been installed
