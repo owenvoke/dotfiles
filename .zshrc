@@ -17,6 +17,7 @@ if [ -f $HOME/.zplug/init.zsh ]; then
     as:theme
 
   # Plugins
+  zplug "plugins/dotenv", from:oh-my-zsh
   zplug "plugins/git", from:oh-my-zsh
   zplug "plugins/nvm", from:oh-my-zsh
   zplug "bobthecow/git-flow-completion"
