@@ -4,8 +4,7 @@ if [ -f $HOME/.zplug/init.zsh ]; then
   source $HOME/.zplug/init.zsh
 
   # compinit
-  autoload -Uz compinit
-  compinit
+  autoload -Uz compinit && compinit
 
   # zplug
   zplug "zplug/zplug", hook-build:'zplug --self-manage'
