@@ -1,5 +1,4 @@
 # Shortcuts
-alias c="clear"
 alias cls="clear"
 alias get-ip="echo $(curl -s https://canihazip.com/s)"
 
@@ -8,6 +7,7 @@ alias a="php artisan"
 alias artisan="php artisan"
 
 # PHP
+alias c="composer"
 alias cfresh="rm -rf vendor/ composer.lock && composer i"
 
 # Functions
