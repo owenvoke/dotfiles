@@ -28,14 +28,6 @@ if [ -f $HOME/.zplug/init.zsh ]; then
   # Additional plugins
   zplug "sptndc/phpenv.plugin.zsh"
 
-  # Install plugins if there are plugins that have not been installed
-  if ! zplug check --verbose; then
-    printf "Install zsh plugins? [y/N]: "
-    if read -q; then
-      echo; zplug install
-    fi
-  fi
-
   # Then, source plugins and add commands to $PATH
   zplug load # --verbose
 fi

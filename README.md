@@ -15,6 +15,9 @@ curl -fLo /usr/local/bin/yadm https://github.com/TheLocehiliosan/yadm/raw/master
 
 # Install dotfiles
 yadm clone https://github.com/pxgamer/dotfiles
+
+# Update Zsh plugins
+zplug install && zplug update && zplug clean
 ```
 
 [ico-code-style]: https://img.shields.io/badge/code%20style-psr2-green.svg?style=flat-square
