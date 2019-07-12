@@ -20,7 +20,6 @@ if [ -f $HOME/.zplug/init.zsh ]; then
   zplug "plugins/encode64", from:oh-my-zsh
   zplug "plugins/git", from:oh-my-zsh
   zplug "plugins/git-flow", from:oh-my-zsh
-  zplug "plugins/nvm", from:oh-my-zsh
 
   # Plugins from zsh users
   zplug "zsh-users/zsh-autosuggestions"
