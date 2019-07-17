@@ -14,11 +14,12 @@
     forceSignAnnotated = true
 
 [core]
-    excludesFile = ~/.gitignore-global
     autocrlf = input
     editor = nano
+    excludesFile = ~/.gitignore-global
 
 [rebase]
+    abbreviateCommands = true
     autoStash = true
 
 [url "git@github.com:"]
@@ -29,9 +30,6 @@
 
 [gitflow "prefix"]
     versiontag = v
-
-[rebase]
-    abbreviateCommands = true
 
 [alias]
     fi = "flow init --defaults"
