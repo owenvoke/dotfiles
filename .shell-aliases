@@ -21,4 +21,4 @@ function proj() {
   printf "\033c"
 }
 
-test -r $HOME/.shell-alises.local && . $HOME/.shell-alises.local
+test -r $HOME/.shell-aliases.local && . $HOME/.shell-aliases.local
