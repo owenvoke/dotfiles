@@ -20,3 +20,5 @@ function proj() {
   cd "$HOME/projects/$1" || return
   printf "\033c"
 }
+
+test -r $HOME/.shell-alises.local && . $HOME/.shell-alises.local
