@@ -17,6 +17,7 @@ alias cfresh="rm -rf vendor/ composer.lock && composer i"
 
 # JavaScript
 alias n="npm"
+alias nfresh="rm -rf node_modules/ package-lock.json && npm i"
 
 # Functions
 function proj() {
