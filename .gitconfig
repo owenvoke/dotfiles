@@ -12,6 +12,7 @@
 
 [tag]
     forceSignAnnotated = true
+    gpgSign = true
 
 [core]
     autocrlf = input
