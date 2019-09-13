@@ -16,6 +16,7 @@ if [ -f $HOME/.zplug/init.zsh ]; then
     as:theme
 
   # Plugins from oh my zsh
+  zplug "plugins/docker", from:oh-my-zsh
   zplug "plugins/dotenv", from:oh-my-zsh
   zplug "plugins/encode64", from:oh-my-zsh
   zplug "plugins/git", from:oh-my-zsh
