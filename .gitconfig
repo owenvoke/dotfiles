@@ -23,6 +23,9 @@
     abbreviateCommands = true
     autoStash = true
 
+[fetch]
+    prune = true
+
 [url "git@github.com:"]
     insteadof = github:
 
