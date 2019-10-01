@@ -1,7 +1,7 @@
 # dotfiles
 
 [![Shell][ico-shell]][link-shell]
-![Coding Style][ico-code-style]
+[![Coding Style][ico-code-style]][link-code-style]
 [![IDE][ico-ide]][link-ide]
 [![IDE Theme][ico-ide-theme]][link-ide-theme]
 
@@ -27,6 +27,7 @@ zplug clean
 [ico-ide-theme]: https://img.shields.io/badge/ide%20theme-github-1f88fe.svg?style=flat-square
 [ico-shell]: https://img.shields.io/badge/shell-zsh-blue.svg?style=flat-square
 
+[link-code-style]: https://docs.styleci.io/presets#laravel
 [link-ide]: https://jetbrains.com/phpstorm
 [link-ide-theme]: https://github.com/freekmurze/phpstorm-color-schemes/blob/master/GitHub.icls
 [link-shell]: http://zsh.sourceforge.net
