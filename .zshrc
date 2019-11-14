@@ -9,12 +9,6 @@ if [ -f $HOME/.zplug/init.zsh ]; then
   # zplug
   zplug "zplug/zplug", hook-build:'zplug --self-manage'
 
-  # Theme
-  zplug "denysdovhan/spaceship-prompt", \
-    use:spaceship.zsh, \
-    from:github, \
-    as:theme
-
   # Plugins from oh my zsh
   zplug "plugins/docker", from:oh-my-zsh
   zplug "plugins/dotenv", from:oh-my-zsh
@@ -30,4 +24,7 @@ if [ -f $HOME/.zplug/init.zsh ]; then
 
   # Then, source plugins and add commands to $PATH
   zplug load # --verbose
+
+  # Theme
+  eval "$(starship init zsh)"
 fi
