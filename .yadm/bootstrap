@@ -24,6 +24,12 @@ if [ "$system_type" = "Linux" ]; then
     sudo apt install zsh
   fi
 
+  # Install Starship prompt if it's missing
+  if ! command -v starship >/dev/null 2>&1; then
+    wget -q -O - https://github.com/starship/starship/releases/latest/download/starship-x86_64-unknown-linux-gnu.tar.gz | tar xz
+    sudo mv starship /usr/local/bin/
+  fi
+
   # Install Zplug if it's missing
   if ! command -v zplug >/dev/null 2>&1; then
     curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
