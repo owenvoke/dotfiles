@@ -36,6 +36,7 @@
     versiontag = v
 
 [alias]
+    amend = commit --amend --no-edit
     fi = flow init --defaults
     s = status
     staged = diff --staged
