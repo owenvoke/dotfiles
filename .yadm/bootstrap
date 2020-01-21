@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-echo "Updating the yadm repo origin URL to SSH"
-yadm remote set-url origin "git@github.com:pxgamer/dotfiles.git"
-
 system_type="$(uname -s)"
 
 if [ "$system_type" = "Darwin" ]; then
