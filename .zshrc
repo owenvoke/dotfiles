@@ -1,4 +1,5 @@
 test -r $HOME/.shell-aliases && source $HOME/.shell-aliases
+test -r $HOME/.paths && source $HOME/.paths
 
 if [ -f $HOME/.zplug/init.zsh ]; then
   source $HOME/.zplug/init.zsh
