@@ -14,7 +14,7 @@ A collection of my dotfiles for development.
 curl -fLo /usr/local/bin/yadm https://github.com/TheLocehiliosan/yadm/raw/master/yadm && chmod a+x /usr/local/bin/yadm
 
 # Install dotfiles
-yadm clone https://github.com/pxgamer/dotfiles
+yadm clone https://github.com/owenvoke/dotfiles
 
 # Update Zsh plugins
 zplug install
