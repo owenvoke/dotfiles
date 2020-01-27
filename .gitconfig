@@ -4,7 +4,7 @@
     signingkey = D8993327B12E5FBF1F3EB6B9B6A92A86D7A46D64
 
 [github]
-    user = pxgamer
+    user = owenvoke
 
 [commit]
     gpgSign = true
