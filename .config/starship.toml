@@ -13,8 +13,14 @@ disabled = true
 [env_var]
 disabled = true
 
+[git_branch]
+symbol = " "
+
 [golang]
 disabled = true
+
+[hg_branch]
+symbol = " "
 
 [java]
 disabled = true
@@ -26,7 +32,10 @@ disabled = true
 disabled = true
 
 [package]
-disabled = true
+symbol = " "
+
+[php]
+symbol = " "
 
 [python]
 disabled = true
