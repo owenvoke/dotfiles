@@ -5,7 +5,9 @@ alias la="ls -A"
 alias l="ls -CF"
 
 # General
-alias get-ip="echo $(curl -s https://canihazip.com/s)"
+alias git="hub"
+alias g="git"
+alias cdr='cd "$(git rev-parse --show-toplevel)"'
 
 # Laravel
 alias a="php artisan"
@@ -19,10 +21,5 @@ alias cfresh="rm -rf vendor/ composer.lock && composer i"
 alias n="npm"
 alias nfresh="rm -rf node_modules/ package-lock.json && npm i"
 
-# Functions
-function proj() {
-  cd "$HOME/projects/$1" || return
-  printf "\033c"
-}
-
+# Include local shell aliases
 test -r $HOME/.shell-aliases.local && . $HOME/.shell-aliases.local
