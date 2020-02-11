@@ -19,6 +19,7 @@ if [ -f $HOME/.zplug/init.zsh ]; then
 
   # Plugins from zsh users
   zplug "zsh-users/zsh-autosuggestions"
+  zplug "zsh-users/zsh-syntax-highlighting", defer:2
 
   # Additional plugins
   zplug "sptndc/phpenv.plugin.zsh"
