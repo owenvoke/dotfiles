@@ -12,7 +12,7 @@ alias cdr='cd "$(git rev-parse --show-toplevel)"'
 # Laravel
 alias a="php artisan"
 alias artisan="php artisan"
-alias tinker = "php artisan tinker"
+alias tinker="php artisan tinker"
 
 # PHP
 alias c="composer"
