@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 test "$(uname)" = "Linux" && \
-  echo "[INFO] Attempting to update Starship to the latest version" || \
+  echo "[INFO] Attempting to update starship to the latest version" || \
   (echo "[INFO] Not a Linux environment, use Brew or Scoop" && exit 1)
 
 if [[ -z "$(command -v)" ]]; then
@@ -14,7 +14,7 @@ curl --silent --fail --location "${LATEST_DOWNLOAD}" \
   | sudo tar xzf - -C "/usr/local/bin"
 
 if [[ $? -ne 0 ]]; then
-  echo "[ERROR] Failed to update Staship binary" && exit
+  echo "[ERROR] Failed to update starship binary" && exit
 fi
 
 echo "[OK] Upgrade to $(starship --version) successful"
