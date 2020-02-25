@@ -22,6 +22,7 @@ if [ -f $HOME/.zplug/init.zsh ]; then
   zplug "zsh-users/zsh-syntax-highlighting", defer:2
 
   # Additional plugins
+  zplug "denysdovhan/gitio-zsh"
   zplug "sptndc/phpenv.plugin.zsh"
 
   # Then, source plugins and add commands to $PATH
