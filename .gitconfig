@@ -38,6 +38,7 @@
 [alias]
     amend = commit --amend --no-edit
     fi = flow init --defaults
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    publish = !git push --set-upstream origin \"$(git rev-parse --abbrev-ref HEAD)\"
     s = status
     staged = diff --staged
-    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
