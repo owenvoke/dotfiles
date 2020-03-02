@@ -14,6 +14,7 @@ if [ -f $HOME/.zplug/init.zsh ]; then
   zplug "plugins/docker", from:oh-my-zsh
   zplug "plugins/dotenv", from:oh-my-zsh
   zplug "plugins/encode64", from:oh-my-zsh
+  zplug "plugins/gitfast", from:oh-my-zsh
 
   # Plugins from zsh users
   zplug "zsh-users/zsh-autosuggestions"
