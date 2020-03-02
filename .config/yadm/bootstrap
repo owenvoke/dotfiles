@@ -31,11 +31,6 @@ if [ "$system_type" = "Linux" ]; then
   if ! command -v zplug >/dev/null 2>&1; then
     curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
   fi
-
-  # Install Hub if it's missing
-  if ! command -v hub >/dev/null 2>&1 && command -v snap >/dev/null 2>&1; then
-    sudo snap install hub --classic
-  fi
 fi
 
 # Set default shell to Zsh
