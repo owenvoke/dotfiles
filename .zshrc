@@ -14,11 +14,10 @@ if [ -f $HOME/.zplug/init.zsh ]; then
   zplug "plugins/docker", from:oh-my-zsh
   zplug "plugins/dotenv", from:oh-my-zsh
   zplug "plugins/encode64", from:oh-my-zsh
-  zplug "plugins/git", from:oh-my-zsh
-  zplug "plugins/git-flow", from:oh-my-zsh
 
   # Plugins from zsh users
   zplug "zsh-users/zsh-autosuggestions"
+  zplug "zsh-users/zsh-completions"
   zplug "zsh-users/zsh-syntax-highlighting", defer:2
 
   # Additional plugins
