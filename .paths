@@ -5,7 +5,8 @@ PATH="/usr/local/bin:$PATH"
 PATH="$HOME/.bin:$PATH"
 
 # Include Composer bin directory
-PATH="$HOME/.composer/vendor/bin:$PATH"
+test -r $HOME/.composer && PATH="$HOME/.composer/vendor/bin:$PATH"
+test -r $HOME/.config/composer && PATH="$HOME/.config/composer/vendor/bin:$PATH"
 
 # Include project-specific binaries before global ones
 PATH="node_modules/.bin:vendor/bin:$PATH"
