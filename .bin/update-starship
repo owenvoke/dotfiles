@@ -4,7 +4,8 @@ test "$(uname)" = "Linux" && \
   echo "[INFO] Attempting to update starship to the latest version" || \
   (echo "[INFO] Not a Linux environment, use Brew or Scoop" && exit 1)
 
-if [[ -z "$(command -v)" ]]; then
+
+if [[ -z "$(command -v starship)" ]]; then
   echo "[INFO] Current version is $(starship --version)"
 fi
 
