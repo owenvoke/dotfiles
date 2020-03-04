@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+test "$(uname)" = "Linux" && \
+  echo "[INFO] Attempting to update starship to the latest version" || \
+  (echo "[INFO] Not a Linux environment, use Brew or Scoop" && exit 1)
+
+read -rp 'Enter GitHub CLI version: ' version
+
+# Validate version number
+if [[ -z "${version}" || ! "${version}" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+  echo "[ERROR] Invalid version: ${version}" && exit
+fi
+
+# Download GitHub CLI installer
+wget -q "https://github.com/cli/cli/releases/download/v${version}/gh_${version}_linux_amd64.deb"
+if [[ $? -ne 0 ]]; then
+  echo "[ERROR] Failed to download installer from GitHub" && exit
+fi
+
+# Install GitHub CLI
+sudo dpkg -i "gh_${version}_linux_amd64.deb"
+if [[ $? -ne 0 ]]; then
+  echo "[ERROR] Failed to update GitHub CLI" && exit
+fi
+
+echo "[OK] Upgrade to GitHub CLI v${version} successful"
