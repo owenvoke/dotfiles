@@ -23,4 +23,10 @@ if [[ $? -ne 0 ]]; then
   echo "[ERROR] Failed to update GitHub CLI" && exit
 fi
 
+# Remove leftover deb file
+rm "gh_${version}_linux_amd64.deb"
+if [[ $? -ne 0 ]]; then
+  echo "[ERROR] Failed to remove leftover install file" && exit
+fi
+
 echo "[OK] Upgrade to GitHub CLI v${version} successful"
