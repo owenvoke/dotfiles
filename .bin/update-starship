@@ -4,16 +4,15 @@ test "$(uname)" = "Linux" && \
   echo "[INFO] Attempting to update starship to the latest version" || \
   (echo "[INFO] Not a Linux environment, use Brew or Scoop" && exit 1)
 
-
+# Check current version of starship
 if [[ -z "$(command -v starship)" ]]; then
   echo "[INFO] Current version is $(starship --version)"
 fi
 
 LATEST_DOWNLOAD="https://github.com/starship/starship/releases/latest/download/starship-x86_64-unknown-linux-gnu.tar.gz"
 
-curl --silent --fail --location "${LATEST_DOWNLOAD}" \
-  | sudo tar xzf - -C "/usr/local/bin"
-
+# Download starship binary and install
+curl --silent --fail --location "${LATEST_DOWNLOAD}" | sudo tar xzf - -C "/usr/local/bin"
 if [[ $? -ne 0 ]]; then
   echo "[ERROR] Failed to update starship binary" && exit
 fi
