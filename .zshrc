@@ -1,3 +1,4 @@
+test -r $HOME/.env.local && source $HOME/.env.local
 test -r $HOME/.shell-aliases && source $HOME/.shell-aliases
 test -r $HOME/.paths && source $HOME/.paths
 
