@@ -24,6 +24,7 @@ cask 'vlc'
 
 # Fonts
 cask 'font-firacode-nerd-font'
+cask 'font-jetbrainsmono-nerd-font'
 cask 'font-roboto'
 
 # GitHub CLI
