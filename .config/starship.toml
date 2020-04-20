@@ -19,10 +19,16 @@ symbol = " "
 [golang]
 disabled = true
 
+[haskell]
+disabled = true
+
 [hg_branch]
 symbol = " "
 
 [java]
+disabled = true
+
+[julia]
 disabled = true
 
 [kubernetes]
@@ -44,6 +50,9 @@ disabled = true
 disabled = true
 
 [rust]
+disabled = true
+
+[singularity]
 disabled = true
 
 [terraform]
