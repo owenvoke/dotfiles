@@ -2,6 +2,7 @@
 tap 'homebrew/cask'
 tap 'homebrew/cask-fonts'
 tap 'github/gh'
+tap 'owenvoke/casks'
 
 # General
 brew 'coreutils'
