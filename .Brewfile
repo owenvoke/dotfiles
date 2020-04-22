@@ -15,6 +15,7 @@ brew 'starship'
 brew 'zsh'
 
 # Casks
+cask 'dbngin'
 cask 'discord'
 cask 'firefox'
 cask 'mediainfo'
