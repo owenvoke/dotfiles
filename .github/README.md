@@ -22,6 +22,12 @@ zplug update
 zplug clean
 ```
 
+## Customising environment and paths
+
+To customise the environment, create a file called `$HOME/.env.local` and fill in any variables using `export`.
+
+To customise the path loading, create a file called `$HOME/.paths.local` and add paths using `PATH="[new_path]:$PATH"`.
+
 [ico-code-style]: https://img.shields.io/badge/code%20style-laravel-green.svg?style=flat-square
 [ico-ide]: https://img.shields.io/badge/ide-phpstorm-775af8.svg?style=flat-square
 [ico-ide-theme]: https://img.shields.io/badge/ide%20theme-github-1f88fe.svg?style=flat-square
