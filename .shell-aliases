@@ -13,7 +13,7 @@ alias refreshenv='test -r $HOME/.env.local && source $HOME/.env.local'
 alias a="php artisan"
 alias artisan="php artisan"
 alias tinker="php artisan tinker"
-alias unit="clear && vendor/bin/phpunit"
+alias unit="clear && if [[ -f vendor/bin/pest ]]; then vendor/bin/pest; else vendor/bin/phpunit; fi"
 
 # PHP
 alias c="composer"
