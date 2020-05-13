@@ -1,10 +1,16 @@
 #!/usr/bin/env bash
 
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    copy_command='pbcopy'
+else
+    copy_command='xsel'
+fi
+
 # Pipe current user's public key to clipboard
 if [[ -f "$HOME/.ssh/id_ed25519.pub" ]]; then
-    xsel -b < "$HOME/.ssh/id_ed25519.pub"
+    ${copy_command} -b < "$HOME/.ssh/id_ed25519.pub"
 elif [[ -f "$HOME/.ssh/id_rsa.pub" ]]; then
-    xsel -b < "$HOME/.ssh/id_rsa.pub"
+    ${copy_command} -b < "$HOME/.ssh/id_rsa.pub"
 else
     echo '=> No public keys available.'
     exit
