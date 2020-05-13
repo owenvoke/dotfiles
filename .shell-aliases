@@ -12,8 +12,8 @@ alias refreshenv='test -r $HOME/.env.local && source $HOME/.env.local'
 # Laravel
 alias a="php artisan"
 alias artisan="php artisan"
+alias p="clear && if [[ -f vendor/bin/pest ]]; then vendor/bin/pest; else vendor/bin/phpunit; fi"
 alias tinker="php artisan tinker"
-alias unit="clear && if [[ -f vendor/bin/pest ]]; then vendor/bin/pest; else vendor/bin/phpunit; fi"
 
 # PHP
 alias c="composer"
