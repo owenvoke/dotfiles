@@ -16,6 +16,7 @@ brew 'starship'
 brew 'zsh'
 
 # Casks
+cask 'alfred'
 cask 'dbngin'
 cask 'discord'
 cask 'firefox'
