@@ -20,9 +20,11 @@ cask 'alfred'
 cask 'dbngin'
 cask 'discord'
 cask 'firefox'
+cask 'helo'
 cask 'mediainfo'
 cask 'mkvtoolnix'
 cask 'tableplus'
+cask 'tinkerwell'
 cask 'vlc'
 
 # Fonts
