@@ -10,16 +10,7 @@ A collection of my dotfiles for development.
 ## Install
 
 ```bash
-# Install yadm
-curl -fLo /usr/local/bin/yadm https://github.com/TheLocehiliosan/yadm/raw/master/yadm && chmod a+x /usr/local/bin/yadm
-
-# Install dotfiles
-yadm clone https://github.com/owenvoke/dotfiles
-
-# Update Zsh plugins
-zplug install
-zplug update
-zplug clean
+git clone https://github.com/owenvoke/dotfiles && cd dotfiles && ./install
 ```
 
 ## Customising environment and paths

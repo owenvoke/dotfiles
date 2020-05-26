@@ -1,0 +1,40 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ["~"]
+
+- link:
+    # Core
+    ~/.dotfiles: ''
+
+    # Directories
+    ~/.bin: bin
+
+    # Git
+    ~/.gitconfig: gitconfig
+    ~/.gitconfig-work: gitconfig-work
+    ~/.gitignore-global: gitignore-global
+
+    # Zsh
+    ~/.paths: paths
+    ~/.shell-aliases: shell-aliases
+    ~/.zprofile: zprofile
+    ~/.zshrc: zshrc
+
+    # Configuration
+    ~/.config/starship.toml:
+      path: config/starship.toml
+      create: true
+    ~/.gnupg/gpg.conf: gnupg/gpg.conf
+
+    # Mac-only
+    ~/.Brewfile:
+      if: '[ `uname` = Darwin ]'
+      path: Brewfile
+    ~/.hushlogin:
+      if: '[ `uname` = Darwin ]'
+      path: hushlogin
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
