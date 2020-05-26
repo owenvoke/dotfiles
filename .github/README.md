@@ -19,6 +19,8 @@ To customise the environment, create a file called `$HOME/.env.local` and fill i
 
 To customise the path loading, create a file called `$HOME/.paths.local` and add paths using `PATH="[new_path]:$PATH"`.
 
+To customise the shell aliases list, create a file called `$HOME/.shell-aliases.local` and add aliases to it.
+
 [ico-code-style]: https://img.shields.io/badge/code%20style-laravel-green.svg?style=flat-square
 [ico-ide]: https://img.shields.io/badge/ide-phpstorm-775af8.svg?style=flat-square
 [ico-ide-theme]: https://img.shields.io/badge/ide%20theme-github-1f88fe.svg?style=flat-square
