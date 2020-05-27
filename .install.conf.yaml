@@ -15,6 +15,7 @@
     ~/.gitconfig: gitconfig
     ~/.gitconfig-work: gitconfig-work
     ~/.gitignore-global: gitignore-global
+    ~/.git-commit-template: git-commit-template
 
     # Zsh
     ~/.paths: paths
