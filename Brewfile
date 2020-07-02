@@ -13,6 +13,7 @@ brew 'gnupg'
 brew 'php'
 brew 'ripgrep'
 brew 'starship'
+brew 'tmux'
 brew 'yq'
 brew 'zsh'
 

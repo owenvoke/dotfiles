@@ -23,5 +23,10 @@ alias cfresh="rm -rf vendor/ composer.lock && composer i"
 alias n="npm"
 alias nfresh="rm -rf node_modules/ package-lock.json && npm i"
 
+# Tmux
+alias ta="tmux attach -t"
+alias tl="tmux list-sessions"
+alias tn="tmux new -s"
+
 # Include local shell aliases
 test -r $HOME/.shell-aliases.local && . $HOME/.shell-aliases.local
