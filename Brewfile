@@ -1,6 +1,7 @@
 # Taps
 tap 'homebrew/cask'
 tap 'homebrew/cask-fonts'
+tap 'microsoft/git'
 tap 'owenvoke/casks'
 tap 'teamookla/speedtest'
 
@@ -36,3 +37,6 @@ cask 'font-roboto'
 
 # Speedtest CLI
 brew 'teamookla/speedtest/speedtest'
+
+# Git Credential Manager
+cask 'microsoft/git/git-credential-manager-core'
