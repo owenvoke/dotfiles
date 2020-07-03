@@ -45,3 +45,9 @@
     publish = !git push --set-upstream origin \"$(git rev-parse --abbrev-ref HEAD)\"
     s = status
     staged = diff --staged
+
+[credential]
+    helper = manager-core
+
+[credential "https://dev.azure.com"]
+    useHttpPath = true
