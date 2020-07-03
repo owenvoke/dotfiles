@@ -1,7 +1,6 @@
 # Taps
 tap 'homebrew/cask'
 tap 'homebrew/cask-fonts'
-tap 'github/gh'
 tap 'owenvoke/casks'
 tap 'teamookla/speedtest'
 
@@ -9,6 +8,7 @@ tap 'teamookla/speedtest'
 brew 'coreutils'
 brew 'gawk'
 brew 'git'
+brew 'gh'
 brew 'gnupg'
 brew 'php'
 brew 'ripgrep'
@@ -33,9 +33,6 @@ cask 'vlc'
 cask 'font-firacode-nerd-font'
 cask 'font-jetbrainsmono-nerd-font'
 cask 'font-roboto'
-
-# GitHub CLI
-brew 'github/gh/gh'
 
 # Speedtest CLI
 brew 'teamookla/speedtest/speedtest'
