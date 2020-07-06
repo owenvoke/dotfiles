@@ -28,6 +28,7 @@ cask 'mkvtoolnix'
 cask 'tableplus'
 cask 'tinkerwell'
 cask 'vlc'
+cask 'zettlr'
 
 # Fonts
 cask 'font-firacode-nerd-font'
