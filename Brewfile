@@ -10,6 +10,7 @@ brew 'gawk'
 brew 'git'
 brew 'gh'
 brew 'gnupg'
+brew 'mas'
 brew 'php'
 brew 'ripgrep'
 brew 'starship'
@@ -37,3 +38,7 @@ cask 'font-roboto'
 
 # Speedtest CLI
 brew 'teamookla/speedtest/speedtest'
+
+# Mac App Store
+mas "Microsoft Remote Desktop", id: 1295203466
+mas "WireGuard", id: 1451685025
