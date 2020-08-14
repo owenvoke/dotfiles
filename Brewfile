@@ -2,6 +2,7 @@
 tap 'homebrew/cask'
 tap 'homebrew/cask-fonts'
 tap 'owenvoke/casks'
+tap 'shivammathur/php'
 tap 'teamookla/speedtest'
 
 # General
@@ -19,12 +20,15 @@ brew 'gh'
 brew 'gnupg'
 brew 'mas'
 brew 'node'
-brew 'php'
 brew 'ripgrep'
 brew 'starship'
 brew 'tmux'
 brew 'yq'
 brew 'zsh'
+
+# PHP
+brew 'shivammathur/php/php'
+brew 'shivammathur/php/php@8.0'
 
 # Casks
 cask 'alfred'
