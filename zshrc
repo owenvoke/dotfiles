@@ -24,6 +24,7 @@ if [ -f $HOME/.zplug/init.zsh ]; then
   # Additional plugins
   zplug "denysdovhan/gitio-zsh"
   zplug "sptndc/phpenv.plugin.zsh"
+  zplug "mfaerevaag/wd", as:command, use:"wd.sh", hook-load:"wd() { . $ZPLUG_REPOS/mfaerevaag/wd/wd.sh }"
 
   # Then, source plugins and add commands to $PATH
   zplug load # --verbose
