@@ -11,6 +11,7 @@ node_modules/
 # Project files
 .idea/
 .vagrant/
+.ztr-directory
 
 # Logs and databases
 *.log
