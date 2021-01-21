@@ -30,8 +30,17 @@ alias tn="tmux new -s"
 
 # Functions
 composer-link () {
-  composer config repositories.local '{"type": "path", "url": "'$1'"}' --file composer.json
+  if [ -z "$2" ]; then
+    repo_name="$(basename $1)"
+  else
+    repo_name="$2"
+  fi
+  composer config repositories.${repo_name} '{"type": "path", "url": "'$1'"}' --file composer.json
 }
+sci () {
+  curl -sL "https://styleci.io/analyses/$1/diff" | git apply --ignore-whitespace
+}
+
 
 # Include local shell aliases
 test -r $HOME/.shell-aliases.local && . $HOME/.shell-aliases.local
