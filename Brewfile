@@ -6,6 +6,7 @@ tap 'shivammathur/php'
 tap 'teamookla/speedtest'
 
 # General
+brew 'act'
 brew 'asciinema'
 brew 'caddy'
 brew 'composer'
