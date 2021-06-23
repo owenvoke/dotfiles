@@ -48,3 +48,4 @@
     publish = !git push --set-upstream origin \"$(git rev-parse --abbrev-ref HEAD)\"
     s = status
     staged = diff --staged
+    tags = tag --sort '-v:refname'
