@@ -32,3 +32,10 @@ if [ -f $HOME/.zplug/init.zsh ]; then
   # Theme
   eval "$(starship init zsh)"
 fi
+
+
+#### FIG ENV VARIABLES ####
+[ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
+#### END FIG ENV VARIABLES ####
+
+
