@@ -2,6 +2,7 @@
 /vendor/
 _ide_helper.php
 .php_cs.cache
+.php-cs-fixer.cache
 .phpstorm.meta.php
 .phpunit.result.cache
 
@@ -11,7 +12,8 @@ node_modules/
 # Project files
 .idea/
 .vagrant/
-.ztr-directory
+.vscode/
+.ztr-directory/
 
 # Logs and databases
 *.log
