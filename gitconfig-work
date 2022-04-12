@@ -1,9 +1,4 @@
 [user]
     name = Owen Voke
     email = owen.voke@worksome.com
-
-[commit]
-    gpgSign = false
-
-[tag]
-    gpgSign = false
+    signingkey = F725C2E5617A727FF98EF639B89FAB47AC107ACA
