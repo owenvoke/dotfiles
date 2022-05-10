@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+original_timeout="${COMPOSER_PROCESS_TIMEOUT:-300}"
+
+if [[ ! -z $1 ]]; then
+  current_timeout="${1}"
+  echo "Switching Composer process timeout from ${original_timeout}ms to ${current_timeout}ms"
+else
+  current_timeout="${original_timeout}"
+  echo "Current timeout is ${current_timeout}ms"
+fi
+
+export COMPOSER_PROCESS_TIMEOUT="${current_timeout}"
