@@ -18,7 +18,7 @@ alias tinker="php artisan tinker"
 # PHP
 alias c="composer"
 alias cfresh="rm -rf vendor/ composer.lock && composer i"
-alias c-timeout="source '$HOME/.bin/switch-composer-timeout'"
+alias c-timeout="composer-switch-timeout"
 
 # JavaScript
 alias n="npm"
@@ -38,10 +38,24 @@ composer-link () {
   fi
   composer config repositories.${repo_name} '{"type": "path", "url": "'$1'"}' --file composer.json
 }
+
+composer-switch-timeout () {
+  original_timeout="${COMPOSER_PROCESS_TIMEOUT:-300}"
+
+  if [[ ! -z $1 ]]; then
+    current_timeout="${1}"
+    echo "Switching Composer process timeout from ${original_timeout}ms to ${current_timeout}ms"
+  else
+    current_timeout="${original_timeout}"
+    echo "Current timeout is ${current_timeout}ms"
+  fi
+
+  export COMPOSER_PROCESS_TIMEOUT="${current_timeout}"
+}
+
 sci () {
   curl -sL "https://styleci.io/analyses/$1/diff" | git apply --ignore-whitespace
 }
-
 
 # Include local shell aliases
 test -r $HOME/.shell-aliases.local && . $HOME/.shell-aliases.local
