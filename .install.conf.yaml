@@ -24,7 +24,6 @@
     ~/.zshrc: zshrc
 
     # Configuration
-    ~/.czrc: czrc
     ~/.config/starship.toml:
       path: config/starship.toml
       create: true
