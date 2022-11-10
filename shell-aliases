@@ -29,6 +29,10 @@ alias ta="tmux attach -t"
 alias tl="tmux list-sessions"
 alias tn="tmux new -s"
 
+# MQTT
+alias mqtt_pub="mqttx pub -h '${MQTT_HOST}' -u '${MQTT_USER}' -P '${MQTT_PASS}'"
+alias mqtt_sub="mqttx sub -h '${MQTT_HOST}' -u '${MQTT_USER}' -P '${MQTT_PASS}'"
+
 # Functions
 composer-link () {
   if [ -z "$2" ]; then
