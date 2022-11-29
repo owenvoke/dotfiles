@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+repo="$1"
+user="${2:-owenvoke}"
+
+if [[ "${repo}" == '' || "${user}" == '' ]]; then
+  echo "
+  Usage: protect-main-branch [repo] [user]"
+
+  test -z "${repo}" && echo "
+   [repo] must be provided."
+
+  exit 0
+fi
+
+echo '{"required_status_checks": null, "enforce_admins": true, "required_pull_request_reviews": {"required_approving_review_count": 0}, "restrictions": null, "required_linear_history": true}' \
+  | gh api -X PUT "repos/${user}/${repo}/branches/main/protection" --input -
