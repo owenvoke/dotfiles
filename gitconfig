@@ -32,15 +32,6 @@
 [init]
     defaultBranch = main
 
-[url "git@github.com:"]
-    insteadof = github:
-
-[includeIf "gitdir:~/work/"]
-    path = ~/.gitconfig-work
-
-[gitflow "prefix"]
-    versiontag = v
-
 [alias]
     amend = commit --amend --no-edit
     fi = flow init --defaults
