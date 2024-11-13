@@ -23,7 +23,6 @@ if [ -f $HOME/.zplug/init.zsh ]; then
 
   # Additional plugins
   zplug "denysdovhan/gitio-zsh"
-  zplug "jasonmccreary/git-trim"
   zplug "sptndc/phpenv.plugin.zsh"
   zplug "mfaerevaag/wd", as:command, use:"wd.sh", hook-load:"wd() { . $ZPLUG_REPOS/mfaerevaag/wd/wd.sh }"
 

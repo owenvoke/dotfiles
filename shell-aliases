@@ -16,8 +16,8 @@ alias p="clear && if [[ -f vendor/bin/pest ]]; then vendor/bin/pest; else vendor
 alias tinker="php artisan tinker"
 
 # PHP
-alias c="composer"
-alias cfresh="rm -rf vendor/ composer.lock && composer i"
+alias c="php /usr/local/bin/composer"
+alias cfresh="rm -rf vendor/ composer.lock && c i"
 alias c-timeout="composer-switch-timeout"
 
 # JavaScript
